@@ -30,7 +30,7 @@ gem 'foundation-rails', '~> 5.5.2.1'
 gem 'automata', '~> 1.0.0'
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
