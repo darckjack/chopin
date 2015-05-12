@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150511025320) do
+ActiveRecord::Schema.define(version: 20150512015209) do
+
+  create_table "teachers", force: :cascade do |t|
+    t.string   "email"
+    t.string   "password_digest"
+    t.string   "name"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "teachers", ["email"], name: "index_teachers_on_email", unique: true
 
   create_table "users", force: :cascade do |t|
     t.string   "email"
