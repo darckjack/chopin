@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :teachers
   resources :users
 
   root :to => "users#index"
